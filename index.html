@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Linus | Creative Developer</title>
+  <meta name="description" content="Portfolio of a Computer Science Student at TUM and Working Student at BMW." />
+
+  <!-- Fonts: Space Grotesk (Headers) & Satoshi (Body - simulated with Inter for now or CDN) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;500;700&family=Inter:wght@300;400;600&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <div id="canvas-container"></div>
+  <div class="cursor"></div>
+
+  <div id="app">
+    <nav class="navbar">
+      <div class="logo">LINUS<span class="dot">.</span></div>
+      <ul class="nav-links">
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#work">Work</a></li>
+        <li><a href="#about">About</a></li>
+
+      </ul>
+      <div class="hamburger">
+        <span></span>
+        <span></span>
+      </div>
+    </nav>
+
+    <main>
+      <section id="hero" class="hero-section">
+        <div class="hero-content">
+          <h1 class="glitch" data-text="SOFTWARE">SOFTWARE</h1>
+          <h1 class="glitch" data-text="ENGINEER">ENGINEER</h1>
+          <p class="hero-subtitle">CS Student @ TUM / Dev @ BMW</p>
+
+          <div class="social-links">
+            <a href="https://github.com/RichterLProgram/" target="_blank" rel="noopener noreferrer"
+              class="social-icon">GH</a>
+            <a href="https://de.linkedin.com/in/linus-richter-766164264?trk=people-guest_people_search-card"
+              target="_blank" rel="noopener noreferrer" class="social-icon">LI</a>
+          </div>
+
+          <div class="scroll-indicator">
+            <span>Scroll to Explore</span>
+            <div class="line"></div>
+          </div>
+        </div>
+      </section>
+
+      <section id="work" class="section">
+        <div class="container">
+          <h2 class="section-title">Experience & Achievements</h2>
+          <div class="bento-grid">
+
+            <!-- BMW Card (Large) -->
+            <div class="bento-card large" data-tilt>
+              <div class="card-content">
+                <div class="card-header">
+                  <h3>BMW Group</h3>
+                  <span class="tag">Working Student</span>
+                </div>
+                <p>Software Development. Building modern solutions for the automotive industry.</p>
+                <div class="card-footer">
+                  <span>09.2025 - 03.2026</span>
+                </div>
+              </div>
+              <div class="card-bg-glow"></div>
+            </div>
+
+            <!-- HACKATUM Card (Medium) -->
+            <div class="bento-card medium" data-tilt>
+              <div class="card-content">
+                <div class="card-header">
+                  <h3>HACKATUM</h3>
+                  <span class="tag">1st Place Huawei Track</span>
+                </div>
+                <p>Won 1st place at one of Europe's largest hackathons with the app <a
+                    href="https://devpost.com/software/huawei-oxc57d?ref_content=my-projects-tab&ref_feature=my_projects"
+                    target="_blank" rel="noopener noreferrer"
+                    style="color: var(--accent-cyan); text-decoration: none;">"Pulse"</a>.</p>
+                <div class="card-footer">
+                  <span>2025</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- TUM Card (Medium) -->
+            <div class="bento-card medium" data-tilt>
+              <div class="card-content">
+                <div class="card-header">
+                  <h3>TUM</h3>
+                  <span class="tag">Education</span>
+                </div>
+                <p>B.Sc. Computer Science. 3rd Semester.</p>
+                <div class="card-footer">
+                  <span>Exp. 2027</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Tech Stack Card (Medium) -->
+            <div class="bento-card medium" data-tilt>
+              <div class="card-content">
+                <h3>Tech Stack</h3>
+                <div class="tech-tags">
+                  <span>Java</span>
+                  <span>Python</span>
+                  <span>React</span>
+                  <span>Three.js</span>
+                  <span>TypeScript</span>
+                  <span>OCaml</span>
+                  <span>C</span>
+                  <span>C++</span>
+                  <span>C#</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- About Card (Medium) -->
+            <div class="bento-card medium" data-tilt id="about-card">
+              <div class="card-content">
+                <h3>About Me</h3>
+                <p>20 y/o developer based in Munich. Obsessed with clean code and interactive design.</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="section">
+        <div class="container">
+          <h2 class="section-title">About Me</h2>
+          <div class="about-detailed">
+            <p>
+              I am a passionate Computer Science student at the Technical University of Munich (TUM), currently in my
+              3rd semester.
+              My journey involves deep diving into algorithms, software architecture, and modern web technologies.
+            </p>
+            <p>
+              At BMW, I apply my knowledge as a Working Student, contributing to real-world software solutions that
+              power the future of mobility.
+              I thrive on solving complex problems and building intuitive, high-performance user interfaces.
+            </p>
+          </div>
+        </div>
+      </section>
+
+
+    </main>
+
+    <footer>
+      <p>Designed & Built by Linus</p>
+    </footer>
+  </div>
+  <script type="module" src="/src/main.js"></script>
+</body>
+
+</html>
